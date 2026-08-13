@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+    line-height: 1.7;
+}
+
+.cabecalho {
+    background: #172a46;
+    color: white;
+}
+
+.menu {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.menu a:focus {
+    text-decoration: underline;
+}
+
+.hero {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.categoria {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p:last-child {
+    font-size: 18px;
+}
+
+main {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.secao {
+    padding: 55px 25px;
+}
+
+.secao h2 {
+    color: #172a46;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.integrante {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.integrante h3 {
+    margin-top: 15px;
+    color: #172a46;
+}
+
+.foto-placeholder {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background: #dbe4ef;
+    color: #172a46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.aviso-fotos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.introducao {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    margin-bottom: 15px;
+}
+
+.questao {
+    background: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-left: 6px solid #315f9b;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.numero {
+    color: #315f9b;
+    font-weight: bold;
+}
+
+.questao h3 {
+    color: #172a46;
+    font-size: 21px;
+    margin: 10px 0 15px;
+}
+
+.questao p {
+    margin-bottom: 15px;
+}
+
+.questao ul,
+.questao ol {
+    margin-left: 25px;
+}
+
+.questao li {
+    margin-bottom: 10px;
+}
+
+.conclusao {
+    background: #e7edf5;
+    border-radius: 12px;
+    margin-bottom: 45px;
+}
+
+.conclusao p {
+    margin-bottom: 15px;
+}
+
+.rodape {
+    background: #172a46;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.rodape p {
+    margin: 5px;
+}
+
+a:focus {
+    outline: 3px solid #f2c94c;
+    outline-offset: 3px;
+}
+
+@media (max-width: 750px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .equipe {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .questao {
+        padding: 22px;
+    }
+}
